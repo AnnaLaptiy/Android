@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="about_text">
+        У лукоморья дуб зеленый;\n
+        Златая цепь на дубе том:\n
+        И днем и ночью <b>кот ученый </b>\n
+        Все ходит по цепи кругом;\n
+        Идет <b>направо</b> - песнь заводит,\n
+        <b>Налево </b>- сказку говорит.
+    </string>
+    <string name="about_tittle">О программе</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="radio">Пример с переключателями</string>
+    <string name="current_pick">Текущий выбор</string>
+    <string name="color_red">Красный</string>
+    <string name="color_green">Зеленый</string>
+    <string name="color_blue">Синий</string>
+    <string name="color_gray">Серый</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_cat_male">Кот</string>
+    <string name="action_cat_female">Кошка</string>
+    <string name="action_kitten">Котёнок</string>
+
+    <string name="func_name">38 попугаев</string>
+    <string name="radiobutton_meters">В метрах</string>
+    <string name="radiobutton_parrots">В попугаях</string>
+    <string name="button_convert_text">Конвертировать</string>
+    <color name="activity_color">#3399cc</color>
+
+    <string name="sun">Солнце</string>
+    <string name="grass">Трава</string>
+    <string name="sky">Небо</string>
+    <string name="clock">Часы</string>
+    <string name="hour">Стрелка</string>
+
+    <string name="wifi_title" translatable="false">Wi-Fi</string>
+    <string name="wifi_summary" translatable="false">Вкл. или выкл. сеть WiFi</string>
+    <string name="hints_title" translatable="false">Подсказки</string>
+    <string name="hints_summary" translatable="false">Показывать подсказки</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Это фрагмент для отображения кота</string>
+
+
+</resources>
