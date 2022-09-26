@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="action.CAT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/about_tittle"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".AddActivity"
+            android:label="@string/about_tittle"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
+        <activity
+            android:name=".FunctionActivity"
+            android:label="@string/about_tittle"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Menu"
+            android:label="@string/about_tittle"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
+        <activity
+            android:name=".Zoo"
+            android:label="@string/about_tittle"
+            android:parentActivityName=".Menu"
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
+        <activity
+            android:name=".paintMenu"
+            android:parentActivityName=".Menu"
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
+        <activity
+            android:name=".myAnimation"
+            android:parentActivityName=".Menu"
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
+        <activity
+            android:name=".MyBrowser"
+            android:parentActivityName=".Menu"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".manual"
+            android:parentActivityName=".Menu"
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
+        <activity android:name=".second_manual" />
+        <activity
+            android:name=".MyPhoto"
+            android:parentActivityName=".Menu"
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
+        <activity
+            android:name=".counterRaven"
+            android:parentActivityName=".Menu"
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
+        <activity
+            android:name=".MyPreferenceActivity"
+            android:label="Окошко настроек"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
+        <activity
+            android:name=".RingtonePreferenceActivity"
+            android:label="Окошко настроек звука"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
+        <activity android:name=".textEditor" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="NoteBook" />
+        <activity
+            android:name=".Radio"
+            android:parentActivityName=".Menu"
+            android:theme="@style/Animation.Design.BottomSheetDialog" />
+
+        <activity android:name=".myFragments"/>
+
+        <activity android:name=".MyDialog"
+            android:parentActivityName=".Menu"
+            android:theme="@style/Animation.Design.BottomSheetDialog"/>
+        <activity android:name=".Recycler"
+            android:parentActivityName=".Menu"
+            android:theme="@style/Animation.Design.BottomSheetDialog"/>
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+    </application>
+
+</manifest>
