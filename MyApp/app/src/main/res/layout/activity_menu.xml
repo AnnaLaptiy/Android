@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/and1">
+
+    <Button
+        android:id="@+id/MyBrowser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyBrowser"
+        app:layout_constraintBottom_toTopOf="@+id/paint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/counter"
+        app:layout_constraintTop_toBottomOf="@+id/converter" />
+
+    <Button
+        android:id="@+id/paint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paint"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/animation"
+        app:layout_constraintTop_toBottomOf="@+id/MyBrowser" />
+
+    <Button
+        android:id="@+id/animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animation"
+        app:layout_constraintBottom_toTopOf="@+id/manual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/paint"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counter" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zoo"
+        app:layout_constraintBottom_toTopOf="@+id/maptest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/manual"
+        app:layout_constraintTop_toBottomOf="@+id/paint" />
+
+    <Button
+        android:id="@+id/converter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        app:layout_constraintBottom_toTopOf="@+id/MyBrowser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mycamera"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ravens"
+        app:layout_constraintBottom_toTopOf="@+id/animation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/MyBrowser"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mycamera" />
+
+    <Button
+        android:id="@+id/manual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manual"
+        app:layout_constraintBottom_toTopOf="@+id/TextEditor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animation" />
+
+    <Button
+        android:id="@+id/mycamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="camera"
+        app:layout_constraintBottom_toTopOf="@+id/counter"
+        app:layout_constraintEnd_toStartOf="@+id/converter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="paint,button10,converter,MyBrowser,TextEditor" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="animation,mycamera,counter,manual,maptest,pazzle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/TextEditor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextEditor"
+        app:layout_constraintBottom_toTopOf="@+id/radio"
+        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manual" />
+
+    <Button
+        android:id="@+id/maptest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="map"
+        app:layout_constraintBottom_toTopOf="@+id/pazzle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/TextEditor"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Radio"
+        app:layout_constraintBottom_toTopOf="@+id/dialogmenu"
+        app:layout_constraintEnd_toStartOf="@+id/maptest"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextEditor" />
+
+    <Button
+        android:id="@+id/pazzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pazzle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/radio"
+        app:layout_constraintTop_toBottomOf="@+id/maptest" />
+
+    <Button
+        android:id="@+id/dialogmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pazzle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

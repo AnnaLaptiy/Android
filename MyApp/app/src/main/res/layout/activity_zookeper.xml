@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200">
+
+    <Button
+        android:id="@+id/cat"
+        android:layout_width="126dp"
+        android:layout_height="114dp"
+        android:background="@drawable/cat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/cow"
+        android:layout_width="202dp"
+        android:layout_height="257dp"
+        android:background="@drawable/cow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cat"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/gees"
+        android:layout_width="114dp"
+        android:layout_height="98dp"
+        android:background="@drawable/gees"
+        app:layout_constraintBottom_toTopOf="@+id/cat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.507" />
+
+    <Button
+        android:id="@+id/bird"
+        android:layout_width="190dp"
+        android:layout_height="144dp"
+        android:background="@drawable/parrot"
+        app:layout_constraintBottom_toTopOf="@+id/cow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
